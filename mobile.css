@@ -1,0 +1,470 @@
+@media (max-width: 767px) {
+  /* Menu bar styling */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .close-sidebar {
+    display: block;
+    cursor: pointer;
+    width: 18px;
+    padding-bottom: 0.8rem;
+    cursor: pointer;
+  }
+
+  /* Sidebar Styling */
+  .nav-links {
+    display: block;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #fff;
+    z-index: 3000;
+    padding: 1.5rem;
+    transition: top 0.3s ease;
+    /* opacity: 0.9; */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links.active {
+    top: 0;
+  }
+
+  .nav-links li {
+    padding: 0.5rem 0;
+  }
+
+  /* Darkened background when menu is open */
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 2000;
+    display: none;
+  }
+
+  .sidebar-overlay.active {
+    display: block;
+  }
+
+  .nav-bar {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-bar h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-section h2 {
+    font-size: 2.4rem;
+  }
+
+  .hero-section p {
+    margin-bottom: 3rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .sub-section {
+    flex-direction: column;
+    /* margin-top: 3rem; */
+  }
+
+  .background {
+    text-align: center;
+  }
+
+  .about-img {
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .gallery-img {
+    width: 100%;
+  }
+
+  .gallery-content {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .gallery-content a {
+    margin-top: 0.5rem;
+  }
+
+  .team-member {
+    padding: 1.5rem 4rem;
+  }
+
+  .footer-message {
+    padding: 5rem 2rem 2rem 2rem;
+  }
+
+  .contact-form input {
+    width: 100%;
+    margin: 0.8rem 0;
+  }
+
+  .message-field {
+    width: 100%;
+    margin: 0.8rem 0;
+  }
+
+  .submit-btn {
+    width: 100%;
+    margin: 0.8rem 0;
+    padding: 0.8rem 1rem;
+  }
+
+  .social-icons a {
+    margin: 0 0.5rem;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav-links li {
+    padding: 0.4rem 0;
+    margin-top: -0.5rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .close-sidebar {
+    margin-top: -0.5rem;
+  }
+
+  .hero-section {
+    top: 65%;
+  }
+
+  .hero-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .background {
+    padding: 2rem 1.8rem;
+  }
+
+  .gallery-content {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .gallery-content h3 {
+    font-size: 1rem;
+  }
+
+  .gallery-content p {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .team-member {
+    padding: 1.5rem 2.5rem;
+  }
+
+  .footer-message {
+    padding: 4rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .footer-message h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-form {
+    margin-top: -1.2rem;
+  }
+
+  .social-icons a {
+    padding: 0.4rem;
+    margin: 0 0.4rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .nav-bar {
+    padding: 0.5rem 1.2rem;
+  }
+
+  .nav-bar h1 {
+    font-size: 2.3rem;
+  }
+
+  .nav-links a {
+    font-size: 1.5rem;
+  }
+
+  .hero-section h2 {
+    font-size: 4rem;
+  }
+
+  .hero-section p {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .btn-hero {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .section {
+    padding: 2rem 2rem;
+  }
+
+  .sub-section {
+    flex-direction: column;
+  }
+
+  .background h2 {
+    font-size: 3rem;
+  }
+
+  .background {
+    padding: 2.5rem 1.9rem;
+  }
+  .background p {
+    font-size: 1.4rem;
+  }
+
+  .about-img {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .snapshot-team h2 {
+    font-size: 3rem;
+  }
+
+  .snapshot-team p {
+    font-size: 1.4rem;
+  }
+
+  .team-member p {
+    font-size: 0.86rem;
+  }
+  .team-track {
+    gap: 1rem;
+  }
+
+  .team-img {
+    width: 100%;
+  }
+
+  .gallery-section h2 {
+    font-size: 3rem;
+  }
+
+  .gallery-section p {
+    font-size: 1.4rem;
+  }
+
+  .gallery-grid {
+    gap: 5rem;
+  }
+
+  .gallery-content {
+    padding: 1.5rem 1.8rem 1.5rem 1.5rem;
+  }
+
+  .gallery-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .gallery-content p {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .gallery-content a {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  .footer-message {
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .footer-message h2 {
+    font-size: 2.5rem;
+  }
+
+  .footer-message p {
+    font-size: 1.4rem;
+  }
+
+  .contact-form input {
+    width: 100%;
+    margin: 0.8rem 0;
+  }
+
+  .message-field {
+    width: 100%;
+    margin: 0.8rem 0;
+  }
+
+  .submit-btn {
+    width: 100%;
+    margin: 0.8rem 0;
+    padding: 0.8rem 1rem;
+  }
+
+  .social-icons a {
+    padding: 0.8rem;
+    margin: 0 0.8rem;
+  }
+
+  .social-icons p {
+    font-size: 1.4rem;
+  }
+
+  span {
+    font-size: 2rem;
+  }
+}
+
+/* @media (min-width: 768px) and (max-width: 1200px) {
+  .nav-bar {
+    padding: 0.5rem 1.2rem;
+  }
+
+  .nav-bar h1 {
+    font-size: 2.3rem;
+  }
+
+  .nav-links a {
+    font-size: 1.5rem;
+  }
+
+  .hero-section h2 {
+    font-size: 4rem;
+  }
+
+  .hero-section p {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .btn-hero {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .section {
+    padding: 2rem 6rem;
+  }
+
+  .background h2 {
+    font-size: 3rem;
+  }
+
+  .background {
+    padding: 2.5rem 1.9rem;
+  }
+  .background p {
+    font-size: 1.4rem;
+  }
+
+  .about-img {
+    width: 220%;
+  }
+
+  .snapshot-team h2 {
+    font-size: 3rem;
+  }
+
+  .snapshot-team p {
+    font-size: 1.4rem;
+  }
+
+  .gallery-section h2 {
+    font-size: 3rem;
+  }
+
+  .gallery-section p {
+    font-size: 1.4rem;
+  }
+
+  .gallery-grid {
+    gap: 5rem;
+  }
+
+  .gallery-content {
+    padding: 1.5rem 1.8rem 1.5rem 1.5rem;
+  }
+
+  .gallery-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .gallery-content p {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .gallery-content a {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  .footer-message {
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .footer-message h2 {
+    font-size: 2.5rem;
+  }
+
+  .footer-message p {
+    font-size: 1.4rem;
+  }
+
+  .contact-form input {
+    width: 100%;
+    margin: 0.8rem 0;
+  }
+
+  .message-field {
+    width: 100%;
+    margin: 0.8rem 0;
+  }
+
+  .submit-btn {
+    width: 100%;
+    margin: 0.8rem 0;
+    padding: 0.8rem 1rem;
+  }
+
+  .social-icons a {
+    padding: 0.8rem;
+    margin: 0 0.8rem;
+  }
+
+  .social-icons p {
+    font-size: 1.4rem;
+  }
+
+  span {
+    font-size: 2rem;
+  }
+} */

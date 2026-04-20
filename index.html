@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>Snapshot</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-bar">
+        <h1>Snapshot</h1>
+        <img
+          src="./image/icon-menu.svg"
+          alt="menu-icon"
+          class="menu-icon"
+          id="hamburger" />
+        <div class="sidebar-overlay" id="overlay"></div>
+
+        <ul class="nav-links">
+          <img
+            src="./image/icon-close.svg"
+            alt="close-icon"
+            class="close-sidebar" />
+          <li><a class="nav-link" href="#section-1">Home</a></li>
+          <li><a class="nav-link" href="#section-2">About</a></li>
+          <li><a class="nav-link" href="#section-3">Gallery</a></li>
+          <li><a class="nav-link" href="#section-4">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main class="main" id="section-1">
+        <div class="hero">
+          <img src="./image/slide-img1.jpg" class="fade-img img1" />
+          <img src="./image/slide-img2.jpg" class="fade-img img2" />
+          <img src="./image/slide-img3.jpg" class="fade-img img3" />
+        </div>
+        <div class="hero-section">
+          <h2>Capture Your Moments</h2>
+          <p>
+            Discover the world through our lens. Explore stunning photography
+            and share your own snapshots with us.
+          </p>
+          <a href="#" class="btn-hero">Explore Gallery</a>
+        </div>
+      </main>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="section-2">
+      <div class="sub-section effect">
+        <div class="background">
+          <h2>Background</h2>
+          <p>
+            Snapshot is a photography website dedicated to showcasing the beauty
+            of the world through captivating images. Our mission is to inspire
+            and connect photographers and enthusiasts alike, providing a
+            platform for sharing and discovering stunning visuals from around
+            the globe.
+          </p>
+        </div>
+        <div class="image-container">
+          <img
+            src="./image/about-img.jpg"
+            alt="About Snapshot"
+            class="about-img effect" />
+        </div>
+      </div>
+
+      <div class="snapshot-team effect">
+        <h2>Our Team</h2>
+        <p>
+          Meet the talented individuals behind Snapshot. Our team of passionate
+          photographers and designers are dedicated to bringing you the best
+          visual experiences.
+        </p>
+
+        <div class="snapshot-members effect">
+          <!-- FIRST ROW OF TEAM MEMBERS -->
+          <div class="team-track">
+            <div class="team-member slide first-row">
+              <img
+                src="./image/team-img1.jpg"
+                alt="Team Member 1"
+                class="team-img" />
+              <h3>Jane Smith</h3>
+              <p>Lead Photographer</p>
+            </div>
+            <div class="team-member slide first-row">
+              <img
+                src="./image/team-img2.jpg"
+                alt="Team Member 2"
+                class="team-img" />
+              <h3>John Doe</h3>
+              <p>Creative Director</p>
+            </div>
+            <div class="team-member slide first-row">
+              <img
+                src="./image/team-img3.jpg"
+                alt="Team Member 3"
+                class="team-img" />
+              <h3>Emily Johnson</h3>
+              <p>Graphic Designer</p>
+            </div>
+
+            <!-- SECOND ROW OF TEAM MEMBERS -->
+
+            <div class="team-member slide second-row">
+              <img
+                src="./image/team-img4.jpg"
+                alt="Team Member 4"
+                class="team-img" />
+              <h3>Maya Brown</h3>
+              <p>Content Creator</p>
+            </div>
+
+            <div class="team-member slide second-row">
+              <img
+                src="./image/team-img5.jpg"
+                alt="Team Member 5"
+                class="team-img" />
+              <h3>Sarah Davis</h3>
+              <p>Marketing analyst</p>
+            </div>
+
+            <div class="team-member slide second-row third-row">
+              <img
+                src="./image/team-img6.jpg"
+                alt="Team Member 6"
+                class="team-img" />
+              <h3>David Wilson</h3>
+              <p>Web Developer</p>
+            </div>
+
+            <!-- THIRD ROW OF TEAM MEMBERS -->
+
+            <div class="team-member slide third-row">
+              <img
+                src="./image/team-img7.jpg"
+                alt="Team Member 7"
+                class="team-img" />
+              <h3>Lisa Taylor</h3>
+              <p>Project Manager</p>
+            </div>
+
+            <div class="team-member slide third-row">
+              <img
+                src="./image/team-img8.jpg"
+                alt="Team Member 8"
+                class="team-img" />
+              <h3>Jane Anderson</h3>
+              <p>Photo Editor</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAROUSEL DOTS -->
+        <div class="carousel" id="dot-container">
+          <span class="carousel-dot active" data-index="0"></span>
+          <span class="carousel-dot" data-index="1"></span>
+          <span class="carousel-dot" data-index="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="section-3">
+      <div class="gallery-section section effect">
+        <h2>Gallery</h2>
+        <p>
+          Explore our curated collection of breathtaking photographs from around
+          the world. From landscapes to portraits, our gallery showcases the
+          diversity and beauty of photography.
+        </p>
+
+        <div class="gallery-grid effect">
+          <div class="gallery-head">
+            <div class="gallery-content">
+              <h3>Gallery Image 1</h3>
+              <p>A beautiful landscape photograph from the mountains.</p>
+              <a href="#">Read more</a>
+            </div>
+
+            <div class="gallery-image">
+              <img
+                src="./image/gallery-img1.jpg"
+                alt="Gallery Image 1"
+                class="gallery-img" />
+            </div>
+          </div>
+
+          <div class="gallery-head">
+            <div class="gallery-content">
+              <h3>Gallery Image 2</h3>
+              <p>A beautiful landscape photograph from the mountains.</p>
+              <a href="#">Read more</a>
+            </div>
+            <div class="gallery-image">
+              <img
+                src="./image/gallery-img2.jpg"
+                alt="Gallery Image 2"
+                class="gallery-img" />
+            </div>
+          </div>
+
+          <div class="gallery-head">
+            <div class="gallery-content">
+              <h3>Gallery Image 3</h3>
+              <p>A beautiful landscape photograph from the mountains.</p>
+              <a href="#">Read more</a>
+            </div>
+            <div class="gallery-image">
+              <img
+                src="./image/gallery-img3.jpg"
+                alt="Gallery Image 3"
+                class="gallery-img" />
+            </div>
+          </div>
+
+          <div class="gallery-head">
+            <div class="gallery-content">
+              <h3>Gallery Image 4</h3>
+              <p>A beautiful landscape photograph from the mountains.</p>
+              <a href="#">Read more</a>
+            </div>
+            <div class="gallery-image">
+              <img
+                src="./image/gallery-img4.jpg"
+                alt="Gallery Image 4"
+                class="gallery-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="section-4">
+      <!-- CONTACT FORMS -->
+      <div class="footer-message section effect">
+        <h2>SEND A MESSAGE</h2>
+        <p>Have a question or want to collaborate? Get in touch with us!</p>
+        <form class="contact-form effect">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea
+            class="message-field"
+            placeholder="Your Message"
+            required></textarea>
+          <div>
+            <button class="submit-btn" type="submit">Send Message</button>
+          </div>
+        </form>
+        <!-- SOCIAL MEDIA LINKS -->
+
+        <div class="social-icons effect">
+          <a href="#"><i class="fab fa-facebook-f fa 3x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa 3x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa 3x"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in fa 3x"></i></a>
+          <a href="#"><i class="fab fa-google fa 3x"></i></a>
+        </div>
+        <p class="effect">
+          Copyright <span>&copy;</span> 2023 Snapshot. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
